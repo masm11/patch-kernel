@@ -14,15 +14,15 @@ You need to structure directories as the follows:
 
 ```
 +- patch.rb
-   +- linux-4/
-   |  +- README
-   |  +- Documentation/
-   |  :
-   +- patch/
-      +- patch-4.0.1.xz
-      +- patch-4.1.xz
-      +- patch-4.1.1.xz
-      :
++- linux-4/
+|  +- README
+|  +- Documentation/
+|  :
++- patch/
+   +- patch-4.0.1.xz
+   +- patch-4.1.xz
+   +- patch-4.1.1.xz
+   :
 ```
 
 # Execution
@@ -32,10 +32,10 @@ cd `the place of the patch.rb`
 ./patch.rb
 ```
 
-patch.rb upgrade the kernel source tree to the latest
-with the patches supplied in patch/ directory.
+patch.rb update the kernel source tree to the latest
+with the patch files supplied in patch/ directory.
 
-If a new patch is released, store it in patch/ and
+If a new patch is released, download it, store it in patch/ and
 re-run ./patch.rb.
 
 # License
